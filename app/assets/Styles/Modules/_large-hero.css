@@ -1,0 +1,58 @@
+.large-hero {       /* base block CSS */
+    border-bottom: 10px solid $mainBlue;
+    position: relative;
+    
+    &__image {
+        display: block;  /* treat as a rectangle that aligns itself.  By default browsers treat images like inline text */
+    }
+
+    &__text-content {   /* various elements within the block */
+          position: absolute;
+        top: 50%;
+        transform: translateY(-50%);  /* translateY() positions the element verically relative to itself    */
+        left: 0;
+        width: 100%;
+        text-align: center
+    }    
+    
+    &__title {
+        font-weight: 300;
+        color: $mainBlue;
+        font-size: 2.4rem;  /* this will be our default baseline size (for cellphones) */
+        
+        @mixin atSmall {
+            font-size: 4.8rem;   
+        }
+      
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        color:$mainBlue;
+        font-size: 1.5rem;   /* this will be our default baseline size (for cellphones) */
+        margin: 0;
+
+        @mixin atSmall {
+            font-size: 2.9rem;   
+        }
+   
+    }
+
+    &__description {
+        color: #fff;
+        font-size: 1.1rem;    /* use rem instead of pixel.  with rem everything is relative to the default HTML element font size, normally 16pixels. This will scale to users font size preferences */
+        font-weight: 100;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);  /* a black thats only 10% visible */
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atSmall {
+            font-size: 1.875rem;
+        }
+    }
+}
+
+
+
