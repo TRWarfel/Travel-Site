@@ -9,3 +9,5 @@
 @import "Modules/_headline";
 @import "Modules/_row";
 @import "Modules/_generic-content-container";
+@import "Modules/_section-title";
+@import "Modules/_feature-item";
