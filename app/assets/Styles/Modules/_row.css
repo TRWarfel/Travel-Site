@@ -6,12 +6,20 @@
         margin-right: -65px;
     }
 
-    /* > define for every div element */
+    &--gutters-large {
+        margin-right: -100px;
+    }
+
+    /* > means to define for every div element */
     &--gutters > div {   
         padding-right: 65px;
         /* box-sizing: border-box; */ /* this tells browser so that the 65px will not effect the total width. overrides the default */ 
     }
     
+    &--gutters-large > div {   
+        padding-right: 100px;
+    }
+
     &__b-margin-until-medium {
         margin-bottom: 1rem;
 
@@ -30,6 +38,15 @@
         }
 
         &__medium-4--larger {
+            width: 37%;
+        }
+        
+        &__medium-6 {
+            float: left;  
+            width: 50%;
+        }
+
+        &__medium-6--larger {
             width: 37%;
         }
         
