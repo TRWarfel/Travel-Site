@@ -1,6 +1,7 @@
 // import the other files (now seperated by tasks)
 require('./gulp/tasks/styles');
 require('./gulp/tasks/watch');
+require('./gulp/tasks/sprites');
 
 
 /*
